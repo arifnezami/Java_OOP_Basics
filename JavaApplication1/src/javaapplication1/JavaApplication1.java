@@ -21,6 +21,7 @@ public class JavaApplication1 {
         System.out.print("Enter a Number: "); 
         int a = input.nextInt();
         System.out.println("Your Input is: " +a);
+        
 //            Scanner sc= new Scanner(System.in); //System.in is a standard input stream  
 //            System.out.print("Enter a string: ");  
 //            String str= sc.nextLine();              //reads string   
