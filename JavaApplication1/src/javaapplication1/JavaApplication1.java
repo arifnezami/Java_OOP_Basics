@@ -100,21 +100,84 @@ public class JavaApplication1 {
 //        System.out.println(answer);
         
         //        SECTION LARGEST NUMBER CHECK BLOCK
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### LARGEST NUMBER CHECK ###"); 
+//        System.out.println("Enter 1st NUMBER: "); 
+//        float a = input.nextFloat();
+//        System.out.println("Enter 2nd NUMBER: "); 
+//        float b = input.nextFloat();
+//        System.out.println("Enter 3rd NUMBER: "); 
+//        float c = input.nextFloat();
+//        float answer;
+//        if((a > b) && (a > c)) answer = a;
+//        else if((b > a) && (b > c)) answer = b;
+//        else answer = c;
+//        System.out.println(answer + " is the largest.");
+//        
+
+// LOOP RELATED
+
+    //        SECTION LOOP TO NUMBER BLOCK
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### LOOP TO NUMBER ###"); 
+//        System.out.println("Enter the NUMBER: "); 
+//        int a = input.nextInt();
+//
+//            for (int i = 1; i <= a; i++) {
+//              System.out.println(i);
+//            }
+            
+            
+//             //        SECTION PRINT ODD NUMBER BLOCK
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### ODD NUMBER ###"); 
+//        System.out.println("Enter the NUMBER: "); 
+//        int a = input.nextInt();
+//
+//            for (int i = 1; i <= a; i++) {
+//                if(i % 2 != 0){
+//                System.out.println(i);
+//                }
+//            }
+
+   //        SECTION PRINT BINARY NUMBER BLOCK
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### BINARY NUMBER ###"); 
+//        System.out.println("Enter the Count of Numbers You want to do Average: "); 
+//        int a = input.nextInt();
+//        float sum = '0';
+//        float current_num = '0';
+//
+//            for (int i = 1; i <= a; i++) {
+//                System.out.println("Enter Number "+i);
+//                current_num = input.nextFloat();
+//                sum = sum + current_num;
+//            }
+//            
+//            float avg = (sum / a);
+//            System.out.println("The average is "+avg);
+            
+            
+             //        SECTION Square BLOCK
         Scanner input = new Scanner(System.in);
-        System.out.println("### LARGEST NUMBER CHECK ###"); 
-        System.out.println("Enter 1st NUMBER: "); 
-        float a = input.nextFloat();
-        System.out.println("Enter 2nd NUMBER: "); 
-        float b = input.nextFloat();
-        System.out.println("Enter 3rd NUMBER: "); 
-        float c = input.nextFloat();
-        float answer;
-        if((a > b) && (a > c)) answer = a;
-        else if((b > a) && (b > c)) answer = b;
-        else answer = c;
-        System.out.println(answer + " is the largest.");
+        System.out.println("### Square Problem ###"); 
+        System.out.println("Enter First Number: "); 
+        int a = input.nextInt();
+        System.out.println("Enter Second Number: "); 
+        int b = input.nextInt();
+        float sum = '0';
+        float current_num = '0';
         
+            for (int i = 1; i <= a; i++) {
+                System.out.println("Enter Number "+i);
+                current_num = input.nextFloat();
+                sum = sum + current_num;
+            }
+            
+        float avg = (sum / a);
+        System.out.println("The average is "+avg);
 
     }
+    
     
 }
