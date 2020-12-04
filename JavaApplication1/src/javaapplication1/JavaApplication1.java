@@ -117,7 +117,7 @@ public class JavaApplication1 {
 
 // LOOP RELATED
 
-    //        SECTION LOOP TO NUMBER BLOCK
+//            SECTION LOOP TO NUMBER BLOCK
 //        Scanner input = new Scanner(System.in);
 //        System.out.println("### LOOP TO NUMBER ###"); 
 //        System.out.println("Enter the NUMBER: "); 
@@ -326,20 +326,128 @@ public class JavaApplication1 {
 //                      n1=n2;    
 //                      n2=n3;    
 //                     }    
-//            //        SECTION Factorial BLOCK
-                   System.out.println("### Factorial Problem ###");
-                   System.out.println("Enter Number: ");
-                   Scanner input = new Scanner(System.in);
-                   int a = input.nextInt();
-                   int factor = 1;    
-                     System.out.println("Factorial of "+a+" is: "+factor);    
+////            //        SECTION Factorial BLOCK
+//                   System.out.println("### Factorial Problem ###");
+//                   System.out.println("Enter Number: ");
+//                   Scanner input = new Scanner(System.in);
+//                   int a = input.nextInt();
+//                   int factor = 1;    
+//       
+//                     
+//                     for(int i=1;i<=a;i++){    
+//                         factor = factor * i;    
+//                     }    
+//                     System.out.println("Factorial of "+a+" is: "+factor);    
                      
-                     for(int i=1;i<=a;i++){    
-                         factor = factor * i;    
-                     }    
-                     System.out.println("Factorial of "+a+" is: "+factor);    
                      
+//                       //        SECTION nCr BLOCK
+//                   System.out.println("### nCr Problem ###");
+//                   System.out.println("Enter r: ");
+//                   Scanner input = new Scanner(System.in);
+//                   int r = input.nextInt();
+//                   System.out.println("Enter n: ");
+//                
+//                   
+//                   int n = input.nextInt();
+//                   int rn = n-r;
+//                   
+//                   if(n < r)
+//                   {
+//                       System.out.println("n will be greater than r");  
+//                    return;
+//                   }
+//                   
+//                   int factorn = 1,factorr = 1,factornr = 1;    
+//       
+//                     
+//                     for(int i=1;i<=r;i++){    
+//                         factorr = factorr * i;    
+//                     }    
+//                     
+//                     for(int i=1;i<=n;i++){    
+//                         factorn = factorn * i;    
+//                     }    
+//                     
+//                     for(int i=1;i<=rn;i++){    
+//                         factornr = factornr * i;    
+//                     }    
+//                     
+//                     int answer = (factorn) / (factorr * factornr);
+//                     
+//                     System.out.println("nCr is: "+answer);  
+//                     
+////                         //        SECTION n to th epower BLOCK
+//                   System.out.println("### x to the power y Problem ###");
+//                   System.out.println("Enter x: ");
+//                   Scanner input = new Scanner(System.in);
+//                   int x = input.nextInt();
+//                   System.out.println("Enter y: ");
+//                
+//                   
+//                   int y = input.nextInt();
+//                  int xsq=1;
+//                   
+//               
+//                     
+//                     for(int i=1;i<=y;i++){    
+//                         xsq = xsq * x;    
+//                     }    
+//                     
+//                     
+//                     System.out.println("answer is: "+xsq);  
+//                     
+//                     
+//                    //        SECTION LCM GCD BLOCK
+//                          System.out.println("### LCM GCD Problem ###");
+//                 int gcd,lcm,remo,numo,deno;
+//                 Scanner sc = new Scanner(System.in);
+//                        System.out.println("Enter 1st Number");
+//                        int n1=sc.nextInt();
+//                        System.out.println("Enter 2nd Number");
+//                        int n2=sc.nextInt();
+//                        if (n1>n2)
+//                 { 
+//                         numo=n1;
+//                         deno=n2;
+//                     }
+//                     else
+//                     {
+//                       numo=n2;
+//                       deno=n1;
+//                        }
+//                        remo=numo%deno;
+//                     while(remo!=0)
+//                     {
+//                           numo=deno;
+//                        deno=remo;
+//                       remo=numo%deno;
+//                     }
+//                     gcd = deno;
+//                     lcm = n1*n2/gcd;
+//                     System.out.println("LCM of "+n1+" and "+n2+" is "+lcm);
+//                     System.out.println("GCD of "+n1+" and "+n2+" is "+gcd);
+//                     
                      
+
+ //                         SECTION Prime Number BLOCK
+                            System.out.println("### Prime Number Problem ###");
+                          int i,m=0,flag=0;      
+                          System.out.println("Enter the Number");
+                          Scanner input = new Scanner(System.in);
+                            int n = input.nextInt();
+                            m=n/2;      
+                            if(n==0||n==1){  
+                             System.out.println(n+" is not prime number");      
+                            }else{  
+                             for(i=2;i<=m;i++){      
+                              if(n%i==0){      
+                               System.out.println(n+" is not prime number");      
+                               flag=1;      
+                               break;      
+                              }      
+                             }      
+                             if(flag==0)  { System.out.println(n+" is prime number"); }  
+                            }
 // Stop here
 
     }
