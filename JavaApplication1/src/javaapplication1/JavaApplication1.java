@@ -311,23 +311,35 @@ public class JavaApplication1 {
 //                   System.out.println("The sum is " + sum);
 //
 //
-///            //        SECTION Febonacci BLOCK
-                   System.out.println("### Febonacci Problem ###");
-                   System.out.println("Number of Terms: ");
+/////            //        SECTION Febonacci BLOCK
+//                   System.out.println("### Febonacci Problem ###");
+//                   System.out.println("Number of Terms: ");
+//                   Scanner input = new Scanner(System.in);
+//                   int a = input.nextInt();
+//                    int n1=0,n2=1,n3;    
+//                     System.out.print(n1+" "+n2);//printing 0 and 1    
+//
+//                     for(int i=2;i<a;++i)//loop starts from 2 because 0 and 1 are already printed    
+//                     {    
+//                      n3=n1+n2;    
+//                      System.out.print(" "+n3);    
+//                      n1=n2;    
+//                      n2=n3;    
+//                     }    
+//            //        SECTION Factorial BLOCK
+                   System.out.println("### Factorial Problem ###");
+                   System.out.println("Enter Number: ");
                    Scanner input = new Scanner(System.in);
                    int a = input.nextInt();
-                    int n1=0,n2=1,n3;    
-                     System.out.print(n1+" "+n2);//printing 0 and 1    
-
-                     for(int i=2;i<a;++i)//loop starts from 2 because 0 and 1 are already printed    
-                     {    
-                      n3=n1+n2;    
-                      System.out.print(" "+n3);    
-                      n1=n2;    
-                      n2=n3;    
+                   int factor = 1;    
+                     System.out.println("Factorial of "+a+" is: "+factor);    
+                     
+                     for(int i=1;i<=a;i++){    
+                         factor = factor * i;    
                      }    
-
-
+                     System.out.println("Factorial of "+a+" is: "+factor);    
+                     
+                     
 // Stop here
 
     }
