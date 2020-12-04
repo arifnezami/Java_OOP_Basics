@@ -209,47 +209,126 @@ public class JavaApplication1 {
 //                
 //            }
             
-//        SECTION 2 Players Guess BLOCK
-        Scanner input = new Scanner(System.in);
-        System.out.println("### 2 Players Guess Problem ###"); 
-        System.out.println("Enter the secret number: "); 
-        int a = input.nextInt();
-        System.out.println("How many times Player 2 can try?: "); 
-        int b = input.nextInt();
-        int c = b;
-        float square = '0';
-        float new_a = '0';
-        int inp = '0';
-        
-            for (int i = 1; i <=c; i++) {
-                
-                
-                System.out.println("Player 2: Enter your guess: "); 
-                inp = input.nextInt();
-            
-                
-                
-                if(a == inp)
-                {
-                     System.out.println("Right, Player-2 wins!");
-                     break;
-                   
-                }
-                else 
-                {
-                    
-                    b = b - 1;
-                    System.out.println("Wrong, "+b+" Choice(s) Left!");
-                }
-                 
-                if(b == 0)
-                {
-                    System.out.println("Player 1 wins!");
-                }
-                
-                
-            }
+////        SECTION 2 Players Guess BLOCK
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### 2 Players Guess Problem ###"); 
+//        System.out.println("Enter the secret number: "); 
+//        int a = input.nextInt();
+//        System.out.println("How many times Player 2 can try?: "); 
+//        int b = input.nextInt();
+//        int c = b;
+//        float square = '0';
+//        float new_a = '0';
+//        int inp = '0';
+//        
+//            for (int i = 1; i <=c; i++) {
+//                
+//                
+//                System.out.println("Player 2: Enter your guess: "); 
+//                inp = input.nextInt();
+//            
+//                
+//                
+//                if(a == inp)
+//                {
+//                     System.out.println("Right, Player-2 wins!");
+//                     break;
+//                   
+//                }
+//                else 
+//                {
+//                    
+//                    b = b - 1;
+//                    System.out.println("Wrong, "+b+" Choice(s) Left!");
+//                }
+//                 
+//                if(b == 0)
+//                {
+//                    System.out.println("Player 1 wins!");
+//                }
+//                
+//                
+//            }
 
+//            //        SECTION Match A BLOCK
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### Match A Problem ###"); 
+//        
+//        char a;
+//            for (int i = 1; i >=0; i++) {
+//                
+//                
+//                System.out.println("Enter One Charecter: "); 
+//                a = input.next().charAt(0);
+//
+//                if(a == 'A')
+//                {
+//                    break;
+//                   
+//                }
+//                else 
+//                {
+//                    System.out.println(a);
+//                }
+//                
+//            }
+//        Scanner input = new Scanner(System.in);
+
+////            //        SECTION INT REVERSE BLOCK
+//                   System.out.println("### INT REVERSE Problem ###");
+//                   System.out.println("Enter an integer: ");
+//                   Scanner input = new Scanner(System.in);
+//                   int a = input.nextInt();
+//                   int reverse = 0;
+//
+//                   while(a != 0)
+//                   {
+//                     reverse = reverse * 10;
+//                     reverse = reverse + a%10;
+//                     a = a/10;
+//                   }
+//
+//                   System.out.println("The Reverse is " + reverse);
+
+////            //        SECTION SERIES CALCULATION BLOCK
+//                   System.out.println("### SERIES CALCULATION Problem ###");
+//                   System.out.println("Number of Terms: ");
+//                   Scanner input = new Scanner(System.in);
+//                   int a = input.nextInt();
+//                   int sum = 0;
+//
+//                   
+//                      for(int i = 0; i <= a ; i++)
+//                    {
+//                     
+//                        if(i % 2 == 0)
+//                            sum = sum - i;
+//                        else
+//                            sum = sum + i;
+//                        
+//                   }
+//
+//                   System.out.println("The sum is " + sum);
+//
+//
+///            //        SECTION Febonacci BLOCK
+                   System.out.println("### Febonacci Problem ###");
+                   System.out.println("Number of Terms: ");
+                   Scanner input = new Scanner(System.in);
+                   int a = input.nextInt();
+                    int n1=0,n2=1,n3;    
+                     System.out.print(n1+" "+n2);//printing 0 and 1    
+
+                     for(int i=2;i<a;++i)//loop starts from 2 because 0 and 1 are already printed    
+                     {    
+                      n3=n1+n2;    
+                      System.out.print(" "+n3);    
+                      n1=n2;    
+                      n2=n3;    
+                     }    
+
+
+// Stop here
 
     }
     
