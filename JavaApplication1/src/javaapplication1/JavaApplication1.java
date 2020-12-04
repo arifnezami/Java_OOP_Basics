@@ -158,24 +158,98 @@ public class JavaApplication1 {
 //            System.out.println("The average is "+avg);
             
             
-             //        SECTION Square BLOCK
-        Scanner input = new Scanner(System.in);
-        System.out.println("### Square Problem ###"); 
-        System.out.println("Enter First Number: "); 
-        int a = input.nextInt();
-        System.out.println("Enter Second Number: "); 
-        int b = input.nextInt();
-        float sum = '0';
-        float current_num = '0';
-        
-            for (int i = 1; i <= a; i++) {
-                System.out.println("Enter Number "+i);
-                current_num = input.nextFloat();
-                sum = sum + current_num;
-            }
+////             //        SECTION N Times Average BLOCK
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### N Times Average Problem ###"); 
+//        System.out.println("How many numbers to average?: "); 
+//        int a = input.nextInt();
+////        System.out.println("Enter Second Number: "); 
+////        int b = input.nextInt();
+//        float sum = '0';
+//        float current_num = '0';
+//        
+//            for (int i = 1; i <= a; i++) {
+//                System.out.println("Enter Number "+i);
+//                current_num = input.nextFloat();
+//                sum = sum + current_num;
+//            }
+//            
+//        float avg = (sum / a);
+//        System.out.println("The average is "+avg);
+
+//        //        SECTION Square and Reach BLOCK
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### Square and Reach Problem ###"); 
+//        System.out.println("Enter 1st Number: "); 
+//        int a = input.nextInt();
+//        System.out.println("Enter 2nd Number: "); 
+//        int b = input.nextInt();
+//        float square = '0';
+//        float new_a = '0';
+//        
+//            for (int i = 1; i != 0; i++) {
+//                
+//                if(a == b)
+//                {
+//                     System.out.println("Reached");
+//                     break;
+//                   
+//                }
+//                else if (a > b)
+//                {
+//                    System.out.println(a*a);
+//                    a = a - 1;
+//                }
+//                 else
+//                {
+//                    System.out.println(a*a);
+//                    a = a + 1;
+//                }
+//                
+//                
+//            }
             
-        float avg = (sum / a);
-        System.out.println("The average is "+avg);
+//        SECTION 2 Players Guess BLOCK
+        Scanner input = new Scanner(System.in);
+        System.out.println("### 2 Players Guess Problem ###"); 
+        System.out.println("Enter the secret number: "); 
+        int a = input.nextInt();
+        System.out.println("How many times Player 2 can try?: "); 
+        int b = input.nextInt();
+        int c = b;
+        float square = '0';
+        float new_a = '0';
+        int inp = '0';
+        
+            for (int i = 1; i <=c; i++) {
+                
+                
+                System.out.println("Player 2: Enter your guess: "); 
+                inp = input.nextInt();
+            
+                
+                
+                if(a == inp)
+                {
+                     System.out.println("Right, Player-2 wins!");
+                     break;
+                   
+                }
+                else 
+                {
+                    
+                    b = b - 1;
+                    System.out.println("Wrong, "+b+" Choice(s) Left!");
+                }
+                 
+                if(b == 0)
+                {
+                    System.out.println("Player 1 wins!");
+                }
+                
+                
+            }
+
 
     }
     
