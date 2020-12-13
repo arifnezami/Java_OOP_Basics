@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package javaapplication1;
-import java.util.*; 
+//import java.util.*; 
 
 /**
  *
@@ -429,25 +429,112 @@ public class JavaApplication1 {
 //                     
                      
 
- //                         SECTION Prime Number BLOCK
-                            System.out.println("### Prime Number Problem ###");
-                          int i,m=0,flag=0;      
-                          System.out.println("Enter the Number");
-                          Scanner input = new Scanner(System.in);
-                            int n = input.nextInt();
-                            m=n/2;      
-                            if(n==0||n==1){  
-                             System.out.println(n+" is not prime number");      
-                            }else{  
-                             for(i=2;i<=m;i++){      
-                              if(n%i==0){      
-                               System.out.println(n+" is not prime number");      
-                               flag=1;      
-                               break;      
-                              }      
-                             }      
-                             if(flag==0)  { System.out.println(n+" is prime number"); }  
-                            }
+// //                         SECTION Prime Number BLOCK
+//                            System.out.println("### Prime Number Problem ###");
+//                          int i,m=0,flag=0;      
+//                          System.out.println("Enter the Number");
+//                          Scanner input = new Scanner(System.in);
+//                            int n = input.nextInt();
+//                            m=n/2;      
+//                            if(n==0||n==1){  
+//                             System.out.println(n+" is not prime number");      
+//                            }else{  
+//                             for(i=2;i<=m;i++){      
+//                              if(n%i==0){      
+//                               System.out.println(n+" is not prime number");      
+//                               flag=1;      
+//                               break;      
+//                              }      
+//                             }      
+//                             if(flag==0)  { System.out.println(n+" is prime number"); }  
+//                            }
+
+//              MID 1st
+
+                int n = 72; // n is initialized to 72 here
+                
+                 while (n % 2 == 0) { // this loop will work until n is an Even number
+                 System.out.println(2 + " "); // just printing a 2 here. The space was not required as it is print line, anyway it will go to next line
+                 
+                 n = n/2; // dividing the n by 2
+                 
+                 }
+                 int i; // getting a new variable for a new loop
+                 for (i = 3; i <= Math.sqrt(n); i += 2) { // this for loop will work until i is less than Square root of n. At first loop, n is 9 here. i will increare by 2 evertime. this loop will work only once as n will be lesser in next loop.
+               
+                     while (n % i == 0) { // this will work if remainder of n % i is 0. 
+                     
+                 System.out.println(i + " ");
+                 
+                 n /= i; // dividing n by i. 
+                 
+                 
+                 }
+                 }
+                 if (n > 2) // this not work as n is already 1
+                 System.out.println(n);
+
+////                      MID 2nd
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### 2nd Question ###"); 
+//        System.out.println("Enter the value of N: "); 
+//        int a = input.nextInt();
+//        int sum = 0;
+//        int current_num = 0;
+//
+//            for (int i = 0; i < a; i++) {
+//                
+//                if(i % 2 == 0)
+//                {
+//                    current_num = i * i * i;
+//                    System.out.println(current_num);
+//                }
+//                else
+//                {
+//                    current_num = i * i;
+//                    System.out.println(current_num);
+//                }
+////                System.out.println(i);
+////                current_num = input.nextFloat();
+//                sum = sum + current_num;
+//                
+//            }
+//            
+//           
+//            System.out.println("The sum is "+sum);
+
+////                      MID 3rd
+//
+//
+//     
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("### Mid 3rd : Calculator ###"); 
+//        System.out.println("Enter 1st NUMBER x: "); 
+//        float a = input.nextFloat();
+//        System.out.println("Enter 2nd NUMBER y: "); 
+//        float b = input.nextFloat();
+//        System.out.println("Enter Operation: 1 for Add / 2 for Substract / 3 for Multiply / 4 for Divide / 5 for Remainder "); 
+//        int c = input.nextInt();
+//        float answer = 0;
+//        int wrong = 0;
+//        
+//        if(c == 1) answer = a + b;
+//        else if(c == 2) answer = a - b;
+//        else if(c == 3) answer = a * b;
+//        else if(c == 4) answer = a / b;
+//        else if(c == 5) answer = a % b;
+//        else 
+//        {
+//            System.out.println("You have selected a wrong operation number.");
+//            wrong = 1;
+//        } 
+//        
+//        if(wrong != 1)
+//        {
+//        System.out.println(answer + " is the answer for operation number "+c+" for x="+a+" and y="+b);
+//        }
+
+
 // Stop here
 
     }
