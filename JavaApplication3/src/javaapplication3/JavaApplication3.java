@@ -15,62 +15,32 @@ public class JavaApplication3 {
      * @param args the command line arguments
      */
    public static void main(String args[]) {
-    Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
-    clicker hi = new clicker(Thread.NORM_PRIORITY + 2);
-    clicker lo = new clicker(Thread.NORM_PRIORITY - 2);
+       
+       
 
-    lo.start();
-    hi.start();
-    try {
-      Thread.sleep(5000);
-    } catch (InterruptedException e) {
-        System.out.println("Main thread interrupted.");
-    }
-
-    lo.stop();
-    hi.stop();
-
-    // Wait for child threads to terminate.
-    try {
-      hi.t.join();
-      lo.t.join();
-    } catch (InterruptedException e) {
-      System.out.println("InterruptedException caught");
-    }
-
-    System.out.println("Low-priority thread: " + lo.click); 
-    System.out.println("High-priority thread: " + hi.click);
-  }
-    
+try {
+// initializing array
+int a[] = {1,2,3,4,5};
+// trying to print element at index S
+System.out.println(a[5]);
+// try-block2 inside another try block
+try {
+// performing division by zero
+int x = a[2] / 0;
 }
-
-// Demonstrate thread priorities.
-class clicker implements Runnable {
-  int click = 0;
-  Thread t;
-  private volatile boolean running = true;
-
-  public clicker(int p) {
-    t = new Thread(this);
-    t.setPriority(p);
-  }
-
-  public void run() {
-    while (running) {
-      click++;
-    }
-  }
-
-  public void stop() {
-    running = false;
-  }
-
-  public void start() {
-    t.start();     
-  }
+catch (ArithmeticException e2) {
+System.out.println("Main thread interrupted.");
+        }
 }
+catch (ArrayIndexOutOfBoundsException e1) {
+System.out.println("ArrayIndexOutofBoundsException.");
+System.out.println("Element at suck index doesnot exists.");
+   
 
+   }
+   
 
-class HiLoPri {
-  
+      
+       
+  }
 }
