@@ -9,38 +9,51 @@ package javaapplication3;
  *
  * @author arif
  */
+
+class Base {
+    Base() {
+        System.out.println("12.");
+    }
+}
+
+class Derived extends Base {
+    Derived() {
+        System.out.println("34.");
+    }
+}
+
 public class JavaApplication3 {
 
     /**
      * @param args the command line arguments
      */
    public static void main(String args[]) {
-       
-       
-
-try {
-// initializing array
-int a[] = {1,2,3,4,5};
-// trying to print element at index S
-System.out.println(a[5]);
-// try-block2 inside another try block
-try {
-// performing division by zero
-int x = a[2] / 0;
-}
-catch (ArithmeticException e2) {
-System.out.println("Main thread interrupted.");
-        }
-}
-catch (ArrayIndexOutOfBoundsException e1) {
-System.out.println("ArrayIndexOutofBoundsException.");
-System.out.println("Element at suck index doesnot exists.");
-   
-
-   }
-   
-
-      
-       
+       Derived d = new Derived();
+//       
+//
+//try {
+//// initializing array
+//int a[] = {1,2,3,4,5};
+//// trying to print element at index S
+//System.out.println(a[5]);
+//// try-block2 inside another try block
+//try {
+//// performing division by zero
+//int x = a[2] / 0;
+//}
+//catch (ArithmeticException e2) {
+//System.out.println("Main thread interrupted.");
+//        }
+//}
+//catch (ArrayIndexOutOfBoundsException e1) {
+//System.out.println("ArrayIndexOutofBoundsException.");
+//System.out.println("Element at suck index doesnot exists.");
+//   
+//
+//   }
+//   
+//
+//      
+//       
   }
 }
