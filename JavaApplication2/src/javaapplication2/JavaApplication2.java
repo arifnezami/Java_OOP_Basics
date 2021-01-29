@@ -56,6 +56,35 @@ class SubSub extends Sub {
     }
 }
 
+class A {
+    public A(){
+        System.out.println("A1");
+    }
+    public void print(){
+        System.out.println("A2");
+    }
+}
+
+class B extends A {
+    public B(){
+        System.out.println("B1");
+    }
+    public void print(){
+        System.out.println("B2");
+    }
+}
+
+class C extends B {
+    public C(){
+        System.out.println("C1");
+    }
+    public void print(){
+        System.out.println("C2");
+    }
+}
+
+
+
 public class JavaApplication2 {
 
     /**
@@ -65,17 +94,25 @@ public class JavaApplication2 {
   
     
     public static void main(String[] args) {
+        
+        
+        A ob = new C();
+        
+        ob.print();
+//        int arr[] = new int[10];
+//        
+//        arr[9] = 5;
         // TODO code application logic here
-          Super x = new Super();
-    Sub y = new Sub();
-    SubSub z = new SubSub();
-  
-    x.print(2);
-    x=y;
-    x.print();
-    y=z;
-    y.print(3);
-    z.print();
+//          Super x = new Super();
+//    Sub y = new Sub();
+//    SubSub z = new SubSub();
+//  
+//    x.print(2);
+//    x=y;
+//    x.print();
+//    y=z;
+//    y.print(3);
+//    z.print();
 //        C c = new C();
 //    System.out.println(c.s);
 //                A superOb = new A();
